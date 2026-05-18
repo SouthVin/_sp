@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Games | Premium Catalog</title>
+    <meta name="description" content="Explore the ultimate premium video game catalog featuring the best titles.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <header class="navbar">
+        <div class="logo">
+            <h1>NEXUS<span>GAMES</span></h1>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for games...">
+            <button id="searchBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Discover Your Next <span>Obsession</span></h2>
+            <p>Curated premium titles for the elite gamer.</p>
+        </section>
+
+        <div class="filters" id="filterContainer">
+            <button class="filter-btn active" data-filter="all">All Games</button>
+            <button class="filter-btn" data-filter="rpg">RPG</button>
+            <button class="filter-btn" data-filter="cyberpunk">Cyberpunk</button>
+            <button class="filter-btn" data-filter="sci-fi">Sci-Fi</button>
+        </div>
+
+        <section class="game-grid" id="gameGrid">
+            <!-- Game cards will be injected here via JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nexus Games. Designed for the Future.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
